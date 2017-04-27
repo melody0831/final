@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Melody's Sweets</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">   
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+  <script language="javascript" src="libraries/p5.dom.js"></script>
+  <!--<script language="javascript" src="libraries/p5.sound.js"></script>-->
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+
+
+<link rel="icon" href="images/small_girl.png" sizes="16x16">   
+ </head> 
+<style>
+    
+body, header, h1, dropbtn, w3-margin-left{
+    font-family:"Lobster";
+}
+    
+h5 {
+    font-family: 'MS PGothic', Osaka, Arial, sans-serif;
+}
+    
+    
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: lightgrey;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+    
+</style>   
+    
+    
+    
+<body>   
+<!-- Navbar-->
+<div class="w3-top" style="">
+  <ul class="w3-navbar w3-black w3-wide w3-padding-8 w3-card-2">
+    <li>
+      <a class="w3-margin-left">
+          <img src="images/jan.gif" id="logo" style="max-width:100px;min-width:100px;">
+          Melody Jan</a>
+        <div>--Senior at Lake Forest College--</div>
+    </li>
+      
+    <li class="w3-right w3-dropdown-hover">
+       <button class="dropbtn">
+         <i class="fa fa-automobile w3-hide-small" style="font-size:48px;"></i>
+         Location
+       </button>
+       <div class="w3-dropdown-content w3-white w3-card-4">
+        <a href="#">Palo Alto</a>
+        <a href="#">San Francisco</a>
+        <a href="#">Berkeley</a>
+       </div>
+    </li>
+      
+    <li class="w3-right w3-dropdown-hover">
+      <button class="dropbtn">
+        <i class="fa fa-birthday-cake w3-hide-small" style="font-size:48px;"></i>
+        Menu
+      </button>
+      <div class="w3-dropdown-content w3-white w3-card-4">
+       <a href="#">Matcha Crep Cake</a>
+       <a href="#">Riceball Redbean Soup</a>
+       <a href="#">Contact</a>
+      </div>
+    </li>
+ 
+    <li class="w3-right w3-dropdown-hover">
+      <button class="dropbtn">
+        <i class="fa fa-envira w3-hide-small" style="font-size:48px;"></i>
+         Hours
+      </button>
+      <div class="w3-dropdown-content w3-white w3-card-4">
+        <a href="#">Monday - Wednesday: 8am to 8pm</a>
+        <a href="#">Thursday - Saturday: 8am to 10pm</a>
+        <a href="#">Sunday: 8am to 6pm</a>
+      </div>
+    </li>
+      
+     <li class="w3-right w3-dropdown-hover">
+      <button class="dropbtn">
+        <i class="fa fa-hand-o-right w3-hide-small" style="font-size:48px;"></i>
+        About
+      </button>
+      <div class="w3-dropdown-content w3-white w3-card-4">
+          <a href="#">Chef</a>
+          <a href="#">Contact</a>
+          <a href="#">Wedding</a> 
+      </div>
+    </li>
+      
+      
+  </ul>
+</div>
+
+<!-- Header -->
+
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px;" id="home">
+  <img class="w3-image" src="images/rice_ball.jpg" alt="Japanese Riceball" width="1600" height="500">
+    </header>       
+    
+<!-- Page content -->
+<div class="w3-content" style="max-width:1200px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">Tradition Techniques</h1><br>
+      <h5 class="w3-center w3-text-grey">伝統技術</h5>
+      <p class="w3-large">Blending traditional techniques with the science of bread making, the breads of our bakery meet the Chef’s exacting standards. Pastry chef makes an array of sweet delights including classic Viennoiserie, breakfast items like muffins as well as an ever-changing selection of tarts, and other treats. The bakery also offers a full range of espresso drinks and coffee, custom-blended by Chef’s longtime partner.</p>
+      <p class="w3-large w3-text-grey">伝統的な技術とパン作りの科学を融合させ、パン屋のパンはシェフの厳しい基準を満たしています。ペストリーのシェフは、クロワッサンやペイントオーショコラなどのクラシックなウィーン料理、マフィンやコーヒーケーキなどの朝食アイテム、タルト、クッキーなどの絶妙なセレクションを提供しています。ベーカリーでは、シェフの長年のパートナーがカスタムブレンドした様々なエスプレッソドリンクとコーヒーを提供しています。</p>
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+      <img src="images/25.JPG" class="w3-round w3-image w3-opacity-min" alt="Matcha Cake" width="600" height="780">
+    </div>
+  </div>
+  
+  <hr>
+
+<div class="w3-content" style="max-width:1200px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64">
+    <div class="w3-col m6 w3-padding-large">
+     <img src="images/18.JPG" class="w3-round w3-image w3-opacity-min" alt="Japanese Garden" width="600" height="8000">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">History</h1><br>
+      <h5 class="w3-center w3-text-grey">歴史</h5>
+      <p class="w3-large">Melody opened the doors of hher first bakery. Located in Palo ALto, California, alongside a Bistro. The Bakery was first conceived as a way to provide the restaurants with one-of-a-kind breads. Quickly, the bakery blossomed into an important establishment in its own right. In the style of classic French boulangeries, the bakery features a wide selection of artisanal breads and classic desserts.</p>
+      <p class="w3-large w3-text-grey">メロディーは最初のベーカリーのドアを開いた。カリフォルニア州パロアルトにあり、ビストロのそばにあります。ベーカリーは、レストランに一種のパンを提供する方法として最初に考案されました。すばやく、パン屋はそれ自体重要な施設に生えました。古典的なフランスのブルガーのスタイルでは、パン屋は職人のパンや古典的なデザートを幅広く取り揃えています。</p>
+    </div>
+  </div>
+
+  <hr>
+    
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="images/chestnut.jpg" alt="Japanese Riceball" width="1600" height="500">
+    </header>      
+    
+    <hr>
+    
+    
+  <!-- Gallery Section-->
+  <div class="w3-container w3-padding-64">
+        <h1 class="w3-center">Custom Desserts</h1><br>
+      <p class="w3-large w3-text-grey w3-center">カスタムデザート</p>
+      <p class="w3-large">We offer specialty items, including custom cakes and favors, as well as various seasonal and holiday items, all of which are available for special order.Regardless of the occasion, scale or nature of your event, the our bakery event planning staff will work closely with you to plan the experience that meets your needs.</p>
+      <p class="w3-large w3-text-grey">カスタムケーキや特典を含むスペシャルティアイテム、季節や休日の様々なアイテムをご用意しています。お客様のイベントの機会、規模、または性質にかかわらず、ベーカリーイベントプランニングスタッフはお客様のニーズに合った経験を計画するためにお客様と密接に協力します。</p>
+  </div>
+<div class="w3-row-padding" style="margin-bottom:10px">
+    
+  <div class="w3-third">
+    <img src="images/1.JPG" style="width:100%">
+    <img src="images/28.JPG" style="width:100%">
+    <img src="images/4.JPG" style="width:100%">
+    <img src="images/12.JPG" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="images/30.JPG" style="width:100%">
+    <img src="images/3.JPG" style="width:100%">
+    <img src="images/10.JPG" style="width:100%">
+    <img src="images/16.png" style="width:100%">
+  </div>
+        
+  <div class="w3-third">
+    <img src="images/11.JPG" style="width:100%">
+    <img src="images/29.JPG" style="width:100%">
+    <img src="images/7.JPG" style="width:100%">
+    <img src="images/5.JPG" style="width:100%">
+  </div>    
+    
+</div>
+  
+<!-- End page content -->
+</div>
+    </div>
+    
+<audio controls>
+  <source src="spring.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+    
+</body>
+
+<!-- Footer -->
+<div class="w3-row w3-section">
+  <div class="w3-quarter w3-center w3-container w3-black w3-large" style="height:100px">
+    <p>Contact</p>
+    <p>Phone Number</p>
+  </div>
+  <div class="w3-quarter w3-center w3-black w3-large" style="height:100px">
+    <p>Follow Us</p>
+    <p>Facebook, Twitter, and Instagram</p>
+  </div>
+    <div class="w3-quarter w3-center w3-black w3-large" style="height:100px">
+    <p>Location</p>
+    <p>Palo Alto, California</p>
+  </div>
+  <div class="w3-quarter w3-center w3-black w3-large" style="height:100px">
+    <p>Designed by Melody Jan</p>
+    <p>2017/05/02</p>
+  </div>
+</div>
+
+</html>
