@@ -1,0 +1,166 @@
+body {
+   font-family: "Impact";
+   font-size: 18px;
+   background-color: #e6e6e6;
+   background-image: url("images/star.png");
+   height: 100%;
+   text-align:center;
+   margin: 0 auto;
+   padding: 0;
+   position: relative;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+#main{color:#e6e6e6; background:#333333;}
+
+#header {
+   background-color: #faf7f3;
+   min-height:150px;
+}
+
+
+#menu {
+   background: linear-gradient(#faf7f3, #333333);
+   list-style-type: none;
+   clear: both;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+
+#menu > ul > li {
+   float: left;
+   font-size: 15px;
+}
+
+#menu ul > li > a {
+   display: block;
+   padding: 10px 30px;
+   color: #ffffff;
+}
+
+
+#main {
+   text-align: justify;
+   box-sizing: border-box;
+   padding: 10px 10px 10px 10px;
+   height: auto;
+   list-style-image: url(images/small_girl.png);
+    overflow: auto;
+}
+
+#main_smile {
+   border: 1px dashed #ffffff;
+   box-sizing: border-box;
+   border-radius: 3px;
+   padding: 10px;
+   margin: 1px 0px;
+   height: auto;
+    overflow: auto;
+}
+
+
+#footer {
+   padding: 2px 0px 2px 0px;
+   height: auto;
+   background: linear-gradient(#333333, #888888);
+   bottom: 0px;
+   min-height:100px;
+   clear: both;
+   margin: 0;
+   padding: 0;
+   overflow: auto;
+}
+
+h1 {
+   font-size: 25px;
+   color: black;
+   margin: 0px 0px 10px 0px;
+   font-weight: bold;
+   text-shadow: 1px 1px #e6e6e6;
+}
+
+h2 {
+   font-size: 20px;
+   color: black;
+   margin: 0px 5px 5px 0px;
+   font-weight: bold;
+   text-shadow: 1px 1px #e6e6e6;
+}
+
+a.black{
+   
+}
+
+a.black:link  {
+   color: white;
+}
+
+a.black:visted {
+   color: lightgray;
+}
+
+a.black:active {
+   color: black;
+   text-decoration: underline;
+}
+
+a.black:hover {
+   color: gray;
+   text-decoration: underline;
+}
+
+a.blue:link  {
+   color: white;
+}
+
+a.blue:visted {
+   color: lightgray;
+}
+
+a.blue:active {
+   color: black;
+}
+
+a.blue:hover {
+   color: gray;
+}
+    
+.footer {
+   float: left;
+   box-sizing: border-box;
+   padding: 0px 5px;
+   width: 25%;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 15px 0px;
+    padding: 12px 15px;
+    z-index: 1;
+}    
+
+p {
+	font-size: 1.3em;
+	margin-bottom: 15px;
+}
+
+#page-wrap {
+	width: 660px;
+	background: white;
+	padding: 20px 50px 20px 50px;
+	margin: 20px auto;
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+}
