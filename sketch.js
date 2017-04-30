@@ -4,13 +4,13 @@ var cnv;
 
 function setup() {
   cnv = createCanvas(300, 30);
-    cnv.position(300, 250);
+    cnv.position(400, 300);
     cnv.style('z-index', '2');
 }
 
 function draw() {
   background(51);
-  stroke(0);
+  stroke(255);
   strokeWeight(2);
   noFill();
   ellipse(x, 20, 10, 10);
