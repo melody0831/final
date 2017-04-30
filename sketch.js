@@ -4,12 +4,12 @@ var cnv;
 
 function setup() {
   cnv = createCanvas(300, 30);
-    cnv.position(230, 200);
+    cnv.position(300, 250);
     cnv.style('z-index', '2');
 }
 
 function draw() {
-  background(250,247,243);
+  background(51);
   stroke(0);
   strokeWeight(2);
   noFill();
