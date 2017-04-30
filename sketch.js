@@ -4,7 +4,7 @@ var cnv;
 
 function setup() {
   cnv = createCanvas(300, 30);
-    cnv.position(400, 300);
+    cnv.position(400, 350);
     cnv.style('z-index', '2');
 }
 
