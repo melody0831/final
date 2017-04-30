@@ -4,7 +4,7 @@ var cnv;
 
 function setup() {
   cnv = createCanvas(200, 30);
-    cnv.position(250, 350);
+    cnv.position(250, 300);
     cnv.style('z-index', '2');
 }
 
@@ -15,7 +15,7 @@ function draw() {
   noFill();
   ellipse(x, 20, 10, 10);
 
-  if (x > 30) {
+  if (x > 200) {
     speed = -3;
   } else if (x < -5) {
       speed = 3;
