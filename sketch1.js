@@ -4,12 +4,12 @@ var cnv;
 
 function setup() {
   cnv = createCanvas(300, 30);
-    cnv.position(270, 1100);
+    cnv.position(700, 200);
     cnv.style('z-index', '2');
 }
 
 function draw() {
-  background(255);
+  background(250,247,243);
   stroke(0);
   strokeWeight(2);
   noFill();
@@ -17,7 +17,7 @@ function draw() {
 
   if (x > 300) {
     speed = -3;
-  } else if (x < -10) {
+  } else if (x < -5) {
       speed = 3;
   }
 
