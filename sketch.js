@@ -3,7 +3,7 @@ var speed = 3;
 var cnv;
 
 function setup() {
-  cnv = createCanvas(790, 30);
+  cnv = createCanvas(780, 30);
     cnv.position(390, 350);
     cnv.style('z-index', '2');
 }
