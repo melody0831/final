@@ -3,13 +3,13 @@ var speed = 3;
 var cnv;
 
 function setup() {
-  cnv = createCanvas(3000, 30);
-    cnv.position(350, 5230);
+  cnv = createCanvas(300, 30);
+    cnv.position(350, 500);
     cnv.style('z-index', '2');
 }
 
 function draw() {
-  background(255);
+  background(230);
   stroke(0);
   strokeWeight(2);
   noFill();
