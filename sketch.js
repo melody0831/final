@@ -3,8 +3,8 @@ var speed = 3;
 var cnv;
 
 function setup() {
-  cnv = createCanvas(30, 30);
-    cnv.position(30, 50);
+  cnv = createCanvas(30, 200);
+    cnv.position(130, 250);
     cnv.style('z-index', '2');
 }
 
@@ -17,7 +17,7 @@ function draw() {
 
   if (x > 30) {
     speed = -3;
-  } else if (x < -1) {
+  } else if (x < -5) {
       speed = 3;
   }
 
