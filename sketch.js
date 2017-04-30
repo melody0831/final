@@ -3,8 +3,8 @@ var speed = 3;
 var cnv;
 
 function setup() {
-  cnv = createCanvas(300, 30);
-    cnv.position(400, 350);
+  cnv = createCanvas(750, 30);
+    cnv.position(370, 350);
     cnv.style('z-index', '2');
 }
 
@@ -15,7 +15,7 @@ function draw() {
   noFill();
   ellipse(x, 20, 10, 10);
 
-  if (x > 300) {
+  if (x > 750) {
     speed = -3;
   } else if (x < -5) {
       speed = 3;
